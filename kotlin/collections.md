@@ -38,7 +38,8 @@ inline fun <T> Array<out  T>.filter(
 ```
 - [filter](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter.html) 
 - 리스트내에 인자들 중 조건에 일치하는 인자만 필터링 할 수 있다.
-- ex)  인자들중 널 값을 제거 하고 싶은 경우 `list.filter { it.isNotEmpty() }`
+- ex) 인자들중 "" 값을 제거 하고 싶은 경우 `list.filter { it.isNotEmpty() }`
+- ex) 인자들중 null 값을 제거 하고 싶은 경우 `list.filterNotNull()`
  
 ## 예제
 ```kotlin
