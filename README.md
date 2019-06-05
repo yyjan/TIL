@@ -21,9 +21,9 @@
 
 ### Google
 - [Google I/O’19 - What’s New in Android](https://github.com/yyjan/TIL/blob/master/google/2019_IO_What%E2%80%99sNewInAndroid.md)
-- [What's New in Architecture Components](https://github.com/yyjan/TIL/blob/master/google/2019_IO_What'sNewInArchitectureComponents.md)
+- [Google I/O’19 - What's New in Architecture Components](https://github.com/yyjan/TIL/blob/master/google/2019_IO_What'sNewInArchitectureComponents.md)
 
-## Interview
+### Interview
 - [Android Interview Questions](https://github.com/yyjan/TIL/blob/master/interview/AndroidInterviewQuestions.md)
 
 ### Kotlin
