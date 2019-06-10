@@ -1,4 +1,4 @@
-## 참고하면 좋은 블로그 모음
+## 참고하면 좋은 웹페이지 모음
 자극 받자! 공부 하자!
 
 ### 개발 공부법
@@ -20,11 +20,12 @@
 - [한달에 한권부터 읽는 독서법](https://brunch.co.kr/@yudong/10)
 - [후배 개발자에게 - 2019년](https://brunch.co.kr/@javajigi/4)
 
-## 유용한 싸이트
+### 유용한 싸이트
 - [StackEdit - In browser Markdown editor](https://stackedit.io/app#)
 - [DiffChecker - Online diff tool](https://www.diffchecker.com/)
 - [TinyPNG - Compress PNG images](https://tinypng.com/)
+- [Learn Git Branching - Git을 쉽게 배울 수 있는 사이트](https://learngitbranching.js.org/)
 
-## 디자인
+### 디자인
 - [윤디자인 -  3.1운동 및 대한민국임시정부 수립 100주년 기념, 무료 폰트 4종](http://www.19192019.com/)
 - [Unsplash - free photos](https://unsplash.com/)
