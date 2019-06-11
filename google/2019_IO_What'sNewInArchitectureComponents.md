@@ -1,6 +1,11 @@
 # What's New in Architecture Components (Google I/O’19)
 Google I/O 2019 What's New in Architecture Components 세션 
 
+## kotlin first
+![2019_io_kotlin_first](https://github.com/yyjan/TIL/blob/master/images/2019_io_kotlin_first.png)
+- 이제는 항상 그렇듯 `Java`로 짜여진 API가 선공개되는 것이 아닌 `kotlin`으로 짜여진 API가 먼저 나올 수 있음
+- `Kotlin`으로만 이루어진 API를 제공할 수도 있음
+
 ## Data Binding
 - `Android Studio 3.5 베타` 기준 성능향상, Incremental annotation processing 위한 옵션
 - 20% 더 빠른 주석 처리
@@ -81,6 +86,17 @@ abstract class AppDatabase : RoomDatabase() {
 ```
 - [Database views](https://developer.android.com/training/data-storage/room/creating-views#kotlin) 제공
 
+## Paging
+- Network error 처리에 대한 새로운 파이프라인을 만들고 있음
+- Header & Footers 삽입하거나 필터링 가능
+- RxJava & 코루틴을 지원
+- alpha 버전 배포
+
+## Navigation
+![2019_io_navigation](https://github.com/yyjan/TIL/blob/master/images/2019_io_navigation.png)
+- Navigation 그래프에서 ViewModel 들을 추적 가능
+- URL을 통해 바로 이동이 가능
+- Dialog 도 탐색 대상이 됨
 
 ## 참고
 - [What's New in Architecture Components (Google I/O'19)](https://www.youtube.com/watch?v=Qxj2eBmXLHg)
