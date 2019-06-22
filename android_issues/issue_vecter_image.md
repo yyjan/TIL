@@ -84,9 +84,29 @@ FATAL EXCEPTION: main
 ```
 
 ## 원인
-안드로이드 롤리팝 `Android 5.0 (API level 21)` 이하 버전에서 백터 이미지 사용시에는 `app:srcCompat` 사용 해야함
+- `Android 4.4(API 레벨 20)` 이하는 벡터 드로어블을 지원하지 않음
+- 앱의 최소 API 레벨이 그 이하로 설정되어 있다면 `PNG` 사용 or `appcompat-v7` 사용 필요
+- `app:srcCompat` 특성으로 벡터 드로어블 사용
+
+## 지원 라이브러리 (com.android.support:appcompat-v7)
+- 지원 라이브러리 23.2 이상과 Gradle용 Android 플러그인 2.0 이상이 필요
+- VectorDrawableCompat 클래스를 사용하면 Android 2.1(API 레벨 7) 이상에서 VectorDrawable을 지원함
+```
+android {
+  defaultConfig {
+    vectorDrawables.useSupportLibrary = true
+  }
+}
+
+dependencies {
+  compile 'com.android.support:appcompat-v7:23.2.0'
+}
+```
+```
+지원 라이브러리와 호환되는 코딩 기술을 사용해야 합니다(예: android:src 특성 대신 app:srcCompat 특성을 벡터 드로어블로 사용)
+```
 
 ## 참고
 - [Difference between app:srcCompat and android:src in Android's layout XML](https://stackoverflow.com/questions/40624554/difference-between-appsrccompat-and-androidsrc-in-androids-layout-xml)
-- (https://developer.android.com/studio/write/vector-asset-studio?hl=ko_
+- [다중 밀도 벡터 그래픽 추가](https://developer.android.com/studio/write/vector-asset-studio?hl=ko_)
 

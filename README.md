@@ -8,7 +8,11 @@
 - [ACC - Lifecycles](https://github.com/yyjan/TIL/blob/master/android/ACC_Lifecycles.md)
 - [ACC - LiveData](https://github.com/yyjan/TIL/blob/master/android/ACC_LiveData.md)
 - [ACC - ViewModel](https://github.com/yyjan/TIL/blob/master/android/ACC_ViewModel.md)
+- [NestedScrollView vs ScrollView](https://github.com/yyjan/TIL/blob/master/android/NestedScrollView_vs_ScrollView.md)
 - [Resource naming convention](https://github.com/yyjan/TIL/blob/master/android/ResourceNamingConvention.md)
+
+### Andorid Issues
+- [Vecter Image Issue](https://github.com/yyjan/TIL/blob/master/android_issues/issue_vecter_image.md)
 
 ### Bookmark
 - [Dev Blog](https://github.com/yyjan/TIL/blob/master/bookmark/DevBlog.md)
