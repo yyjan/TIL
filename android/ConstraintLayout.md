@@ -20,8 +20,8 @@
 - `W` 수평, `H` 수직, 16:9
 
 ## 중앙 배치
-`layout_constraintHorizontal_bias` : 가로축에서 객체의 치우친 정도를 설정
-`layout_constraintVertical_bias` : 세로축에서 객체의 치우친 정도를 설정
+- `layout_constraintHorizontal_bias` : 가로축에서 객체의 치우친 정도를 설정
+- `layout_constraintVertical_bias` : 세로축에서 객체의 치우친 정도를 설정
 ```xml
 <TextView
         android:layout_width="wrap_content"

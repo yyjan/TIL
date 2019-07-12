@@ -27,8 +27,8 @@ val chars = charArrayOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', '
 
 println(chars.joinToString(limit = 5, truncated = "...!") { it.toUpperCase().toString() }) // A, B, C, D, E, ...! 
 ```
-
- 
+<br>
+<br>
 
 # filter
  ```kotlin
@@ -54,5 +54,29 @@ val nonMatchingPredicate: ((Map.Entry<String, Int>)) -> Boolean = { it.value == 
 val emptyMap = originalMap.filter(nonMatchingPredicate)
 
 println(emptyMap) // {}
-
 ```
+<br>
+<br>
+
+# first(), last() 
+ ```kotlin
+class Test {
+    val animals = listOf("A", "B", "C")
+
+    fun first() {
+        animals.first().forEach { println(it) }
+        animals.firstOrNull()?.forEach { println(it) }
+
+        animals.last().forEach { println(it) }
+        animals.lastOrNull()?.forEach { println(it) }
+    }
+}
+ ```
+- [first](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/first.html) 
+- [last](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/last.html) 
+- `first()` 첫번째 아이템 반환, 아이템이 존재 하지 않는다면 `NoSuchElementException` 발생
+- `firstOrNull` 첫번째 아이템 반환, 아이템이 존재 하지 않는다면 'Null' 반환
+
+## 참고
+- [Package kotlin.collections](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/index.html)
+- [코틀린 스트림 함수](https://namget.tistory.com/entry/Kotlin-%EC%BD%94%ED%8B%80%EB%A6%B0-%EC%8A%A4%ED%8A%B8%EB%A6%BC-%ED%95%A8%EC%88%98-map-flatMap-groupBy-filter-take-drop-first-distinct-zip-joinToString-count-any-none-max-min-average)
