@@ -31,6 +31,39 @@
 - `layout_constraintGuide_end` : 우측 또는 하단으로부터 고정된 거리값으로 배치
 - `layout_constraintGuide_percent` : 0부터 1까지 float값을 넣어 전체 길이의 비례적으로 배치 
 
+## Chain
+![chains-styles](https://developer.android.com/reference/android/support/constraint/resources/images/chains-styles.png)
+```xml
+<android.support.constraint.ConstraintLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <Button
+    android:id="@+id/button1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintHorizontal_weight="1"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/button2" />
+
+  <Button
+    android:id="@+id/button2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintHorizontal_weight="1"
+    app:layout_constraintHorizontal_chainStyle="packed"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/button1" />
+</android.support.constraint.ConstraintLayout>
+```
+- 체인은 가로 또는 세로 축의 방향으로 객체들을 서로서로 묶는 것
+- `layout_constraintHorizontal_chainStyle` : 가로축 체인의 스타일을 설정
+- `layout_constraintVertical_chainStyle` : 세로축 체인의 스타일을 설정
+- `layout_constraintHorizontal_weight` : 가로축 체인의 weight
+- `layout_constraintVertical_weight` : 세로축 체인의 weight
+
 ## Ratio 비율 적용 
 ```xml
 <Button android:layout_width="wrap_content"
