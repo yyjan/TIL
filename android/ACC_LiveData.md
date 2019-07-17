@@ -65,7 +65,31 @@ override fun onActivityCreated(savedInstanceState: Bundle?) {
 btn_click.setOnClickListener {
         viewModel.data.value = "button clicked"
     }
-```      
+```     
+
+## Transformation
+변경된 LiveData를 observer에게 전달하기 전에 데이터를 가공 가능
+
+### Map
+```kotlin
+val userLiveData:LiveData  = ...;
+val userNameLLiveData  = Transformations.map(userLiveData, user -> {
+     return user.firstName + " " + user.lastName; // String을 리턴합니다.
+```
+- UserLiveData 의 변경사항을 Observe해서 함수를 통해 원하는값으로 변경한뒤 ‘String’을 리턴
+- 즉 새로운 LiveData를 리턴하는게 아닌 데이터만 변경
+
+### SwitchMap
+```kotlin
+val userIdLiveData:MutableLiveData = ...;
+val userLiveData:LiveData = Transformations.switchMap(userIdLiveData, id ->
+    repository.getUserById(id)); // LiveData를 리턴합니다.
+
+fun setUserId(userId:String) {
+     this.userIdLiveData.setValue(userId);
+}
+```
+- SwitchMap은 데이터의 인자값에 따라 다른 LiveData를 발행
 
 ## 참고
 - [LiveData Overview](https://developer.android.com/topic/libraries/architecture/livedata.html)
