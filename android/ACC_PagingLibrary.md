@@ -50,8 +50,14 @@ class ConcertAdapter() :
     }
 }
 ```
+## Item Modify examples
+```
+PagedListAdapter.currentList.snapshot().get(INDEX).property = VALUE
+PagedListAdapter.notifyItemChanged(INDEX)
+```
 
 ## 참고
 - [Paging library overview ](https://developer.android.com/topic/libraries/architecture/paging/)
 - [Paging Library, 그것이 쓰고싶다](https://medium.com/@jungil.han/paging-library-%EA%B7%B8%EA%B2%83%EC%9D%B4-%EC%93%B0%EA%B3%A0%EC%8B%B6%EB%8B%A4-bc2ab4d27b87)
 - [Paging – DataSource 종류](https://www.charlezz.com/?p=599)
+- [Android Paging Library with multiple view types](https://proandroiddev.com/android-paging-library-with-multiple-view-type-68f85fe1222d)
