@@ -22,3 +22,27 @@ public class Example{
 ```kotlin
 private val adapter by lazy { RepoAdapter(this) }
 ```
+
+```kotlin
+private val _quests: LiveData<PagedList<Channel>> by lazy { fetchPicks() }
+val quests: LiveData<PagedList<Channel>>
+    get() = _quests
+
+private fun fetchPicks(): LiveData<PagedList<Channel>> {
+      dataSourceFactory?.clear()
+      val config = PagedList.Config.Builder()
+          .setEnablePlaceholders(false)
+          .setInitialLoadSizeHint(QuestListDataSource.PAGE_SIZE)
+          .setPageSize(QuestListDataSource.PAGE_SIZE)
+          .build()
+
+      dataSourceFactory = QuestDataSourceFactory(
+          categoryId,
+          pickType,
+          channelRepository,
+          createObservableTransformer()
+      )
+
+      return LivePagedListBuilder(dataSourceFactory!!, config).build()
+  }
+```
