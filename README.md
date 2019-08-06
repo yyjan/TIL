@@ -10,8 +10,11 @@
 - [ACC - LiveData](https://github.com/yyjan/TIL/blob/master/android/ACC_LiveData.md)
 - [ACC - PagingLibrary](https://github.com/yyjan/TIL/blob/master/android/ACC_PagingLibrary.md)
 - [ACC - ViewModel](https://github.com/yyjan/TIL/blob/master/android/ACC_ViewModel.md)
+- [Color Transparent](https://github.com/yyjan/TIL/blob/master/android/Color_Transparent.md)
 - [ConstraintLayout](https://github.com/yyjan/TIL/blob/master/android/ConstraintLayout.md)
 - [NestedScrollView vs ScrollView](https://github.com/yyjan/TIL/blob/master/android/NestedScrollView_vs_ScrollView.md)
+- [RecyclerView_PagerSnapHelper](https://github.com/yyjan/TIL/blob/master/android/RecyclerView_PagerSnapHelper.md)
+- [RecyclerView_Payload](https://github.com/yyjan/TIL/blob/master/android/RecyclerView_Payload.md)
 - [Resource naming convention](https://github.com/yyjan/TIL/blob/master/android/ResourceNamingConvention.md)
 
 ### Andorid Issues
