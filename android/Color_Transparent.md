@@ -110,7 +110,7 @@
 <color name="black">#000000</color>
 ```
 ```xml
- <color name="black">#99000000</color> 
+<color name="black">#99000000</color> 
 ```
 
 ## 참고
