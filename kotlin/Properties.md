@@ -4,6 +4,30 @@
 - 커스텀 getter/setter가 없는 프로퍼티만 사용 가능
 - 로컬 변수로 사용 불가능
 
+## lateinit 초기화 확인
+- [Checking whether a lateinit var is initialized](https://kotlinlang.org/docs/reference/properties.html#checking-whether-a-lateinit-var-is-initialized-since-12)
+- 실제 값을 사용할 때 lateinit을 한번 체크해줌으로써 안전하게 접근 가능
+
+```kotlin
+class SampleActivity {
+
+	private lateinit var sampleAdapter: SampleAdapter
+
+	override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_sample_main)
+
+    // 부르는 시점 초기화
+    sampleAdapter = SampleAdapter(ImageLoaderAdapterViewModel(this@SampleMainActivity, 3))
+
+		if (::sampleAdapter.isInitialized) {
+			sampleAdapter.addItem()
+			sampleAdapter.notifyDataSetChanged()
+		}
+	}
+}
+```
+
 # lazy
 - [lazy](https://kotlinlang.org/docs/reference/delegated-properties.html#lazy)
 - val(immutable) 프로퍼티만 사용 가능
@@ -46,3 +70,6 @@ private fun fetchPicks(): LiveData<PagedList<Channel>> {
       return LivePagedListBuilder(dataSourceFactory!!, config).build()
   }
 ```
+
+## 참고
+- [Kotlin lazy property - lateinit/lazy 살펴보기](https://thdev.tech/kotlin/2018/03/25/Kotlin-lateinit-lazy/)
