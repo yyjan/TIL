@@ -24,6 +24,9 @@
 ### Bookmark
 - [Dev Blog](https://github.com/yyjan/TIL/blob/master/bookmark/DevBlog.md)
 
+### Dev News
+- [#2020-04](https://github.com/yyjan/TIL/blob/master/dev_news/%232020-04.md)
+
 ### Conference
 - [I/O Extended 2019 Seoul](https://github.com/yyjan/TIL/blob/master/conference/Io_extended_2019_seoul.md)
 
